@@ -5,13 +5,18 @@
     padding: 0;
     box-sizing: border-box;
 
-    background-color: black;
-    color: white;
-
-    background-image: url();
-
+  list-style: none;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+    
+  
 
 }
+
+
+
+
 
 
 
