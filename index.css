@@ -1,0 +1,412 @@
+
+*{
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  list-style: none;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+    
+  
+
+}
+
+
+.container{
+
+  display: grid;
+
+  grid-template-columns: [full-start] 1fr [content-start] repeat(12, [col-start] 128px [col-end]) [content-end] 1fr [full-end];
+
+  gap: 32px;
+
+}
+
+/*  Navigation start  */
+nav{
+
+grid-row: 1;
+
+grid-column: content-start/content-end;
+
+
+
+
+
+}
+.NavBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list{
+
+  grid-row: 1;
+
+  grid-column: col-start 5/col-end 12 ;
+
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  justify-content: space-between;
+
+gap: 50px;
+
+}
+
+/* Navigation end   */
+
+
+/* Header section start */
+
+header{
+
+  grid-row: 2;
+
+  grid-column: content-start / content-end;
+
+  display: flex;
+  flex-direction: row;
+
+
+  display: contents;
+  padding-top: 30px ;
+  width: 100%;
+
+}
+
+.social{
+
+
+  grid-row: 2;
+  grid-column: content-start/col-end 1;
+  
+width: 100%;
+}
+
+.header{
+
+  
+
+  grid-row: 2;
+
+  grid-column: col-end 3 / col-end 10;
+ 
+width: 950px;
+height: 200px;
+ padding-left: 500px;
+ padding-right: 287px;
+
+
+
+
+}
+
+.header h1{
+
+  width: 950px;
+  height: 200px;
+  
+
+}
+
+
+.pagination{
+
+grid-row: 2;
+
+grid-column: col-end 12 /  content-end;
+
+width: 100%;
+
+
+
+}
+
+/* Header section end */
+
+
+/* main secton start  */
+main{
+
+  grid-row: 3;
+
+  grid-column: col-start 2/col-end 11;
+   
+}
+
+
+/* Caed-1 style start */
+
+.Card-1{
+
+
+  display: flex;
+
+  align-items: center;
+  padding-top: 200px;
+
+}
+
+.card-items{
+
+display: flex;
+flex-direction: column;
+
+text-align: start;
+padding-left: 130px;
+padding-right: 50px;
+
+}
+
+.Card-1 .card-items{
+
+  width: 100%;
+
+
+
+
+}
+
+.card-items span {
+
+  padding-bottom: 27px;
+
+
+}
+
+.card-items h2 {
+
+  padding-bottom: 27px;
+ font-size: xx-large;
+
+
+}
+
+.card-items p{
+
+padding-bottom: 27px;
+
+
+}
+
+/* Card-1 style end  */
+
+
+/* Caed-2 style start */
+
+.Card-2{
+
+
+  display: flex;
+
+  align-items: center;
+
+  
+  padding-top: 200px;
+
+}
+
+.card2-items{
+
+display: flex;
+flex-direction: column;
+
+text-align: start;
+padding-left: 130px;
+padding-right: 50px;
+
+}
+
+.Card-1 .card2-items{
+
+  width: 100%;
+
+
+
+
+}
+
+.card2-items span {
+
+  padding-bottom: 27px;
+
+
+}
+
+.card2-items h2 {
+
+  padding-bottom: 27px;
+ font-size: xx-large;
+
+
+}
+
+.card2-items p{
+
+padding-bottom: 27px;
+
+
+}
+
+/* Card-2 style end  */
+
+/* Caed-3 style start */
+
+.Card-3{
+
+
+  display: flex;
+
+  align-items: center;
+
+  
+  padding-top: 200px;
+
+}
+
+.card3-items{
+
+display: flex;
+flex-direction: column;
+
+text-align: start;
+padding-left: 130px;
+padding-right: 50px;
+
+}
+
+.Card-1 .card3-items{
+
+  width: 100%;
+
+
+
+
+}
+
+.card3-items span {
+
+  padding-bottom: 27px;
+
+
+}
+
+.card3-items h2 {
+
+  padding-bottom: 27px;
+ font-size: xx-large;
+
+
+}
+
+.card3-items p{
+
+padding-bottom: 27px;
+
+
+}
+
+/* Card-3 style end  */
+
+
+/* main section end  */
+
+
+/* footer start */
+
+
+
+footer{
+
+
+
+  display: flex;
+  justify-content: space-between;
+  grid-row: 4;
+
+  grid-column: content-start/content-end;
+ 
+
+  padding-top: 200px;
+
+      
+}
+
+/* img-footer start*/
+.img-footer img{
+
+  padding-bottom: 27px;
+}
+
+.img-footer p{
+
+font-family: Gilroy;
+  line-height: 32px;
+}
+
+/* img-footer end */
+
+
+/* footer-grup start */
+
+.footer-grup h3{
+  font-family: Gilroy;
+  color: rgb(250, 201, 110);
+
+  font-size: x-large;
+  padding-bottom: 27px;
+
+
+}
+
+.footer-grup li{
+  font-family: Gilroy;
+  padding-bottom: 27px;
+
+}
+
+
+
+/* footer-grup end */
+
+
+/* footer-grup2 start */
+
+
+.footer-grup2 h3{
+  font-family: Gilroy;
+  color: rgb(250, 201, 110);
+
+  font-size: x-large;
+  padding-bottom: 27px;
+
+}
+
+
+
+.footer-grup2 li{
+  font-family: Gilroy;
+  padding-bottom: 27px;
+
+}
+
+
+
+
+
+
+/* footer-grup2 end */
+
+
+
+
+/* footer end */
