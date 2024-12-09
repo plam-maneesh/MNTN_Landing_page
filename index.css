@@ -8,9 +8,9 @@
 
   list-style: none;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
     
-  
+  background-color: rgb(11, 29, 38);
 
 }
 
@@ -57,7 +57,7 @@ z-index: 1;
 
   grid-row: 1/2;
 
-  grid-column: col-start 5/col-end 12 ;
+  grid-column: col-start 5/col-end 12  ;
 
 
   display: flex;
@@ -87,9 +87,13 @@ header{
 
   display: flex;
   flex-direction: row;
+ 
 
 
 
+}
+header, header * {
+  background-color: transparent !important;
 }
 
 .social{
@@ -176,11 +180,12 @@ grid-column: full-start/ full-end;
   height: 33.33%; /* Divides header into 3 equal sections */
   background-size: cover; /* Ensure the image scales properly */
   background-repeat: no-repeat; /* No repeating */
+  background-color: transparent !important;
 }
 
 .bg-top {
 
-grid-row: 1;
+grid-row: 1/2;
 
 grid-column: full-start/ full-end;
 
@@ -191,12 +196,13 @@ grid-column: full-start/ full-end;
   background-image: url('img/bg-img/BG\ Hero.png'); /* Replace with your image URL */
   height: 100vh;
   width: 100wh;
+  z-index: 1;
 }
 
 /* Upper-center piece */
 .bg-upper-center {
 
-  grid-row: 1;
+  grid-row: 1/2;
   grid-column: full-start/ full-end;
   top: 0px; /* Start below the top piece */
   right: 0;
@@ -204,28 +210,32 @@ grid-column: full-start/ full-end;
   background-image: url('img/bg-img/HG.png'); /* Replace with your image URL */
   height: 100vh;
   width: 100wh;
+  
 }
 
 /* Lower-center piece */
 .bg-lower-center {
-  grid-row: 1;
+  grid-row: 1/2;
   grid-column: full-start/ full-end;
-  top: 60%; /* Start below the upper-center piece */
+  top: 40%; /* Start below the upper-center piece */
   right: 0;
   background-image: url('img/bg-img/MG.png'); /* Replace with your image URL */
   height: 100vh;
   width: 100wh;
+  z-index: 1;
 }
 /* Bottom piece */
 .bg-bottom {
-  grid-row: 1;
+  grid-row: 1/2;
   grid-column: full-start/ full-end;
-  top: 100%; /* Start below the lower-center piece */
+  top: 80%;/* Start below the lower-center piece */
+
   background-image: url('img/bg-img/VG.png'); /* Replace with your image URL */
   height: 60vh;
   width: 100wh;
-
+z-index: 1;
 }
+
 /* bg-Style end  */
 
 
